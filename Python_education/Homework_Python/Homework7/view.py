@@ -20,7 +20,7 @@ def main_menu():
             if 0 < choice < 9:
                 return choice 
             else:
-                print('Введите значение от 1 до 9')
+                print('Введите значение от 1 до 8')
         except ValueError:
             print('Введите корректное значение: ')
 
@@ -37,7 +37,7 @@ def input_error():
     print('Ошибка ввода, введите корректный пункт меню')
 
 def end_program():
-    print('До свидания! Программа звершена')
+    print('До свидания! Программа завершена')
 
 def empty_request():
     print('Искомый контакт не найден')
@@ -74,3 +74,7 @@ def change_contact():
     phone = input('Введите телефон: ')
     comment = input('Введите комментарий: ')
     return name, phone, comment
+
+
+def information(message):
+    print(message)
